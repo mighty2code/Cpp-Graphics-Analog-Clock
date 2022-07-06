@@ -11,18 +11,15 @@
 #define PI 22.0/7.0
 #define BGI_PATH "C:\\TC\\BGI"
 
-struct point
-{
+struct point {
 	float x,y;
 };
 
-struct line_seg
-{
+struct line_seg {
 	point a,b;
 };
 
-struct clock_attributes
-{
+struct clock_attributes {
 	point centre;
 	float radius;
 	int display_digital;
@@ -33,8 +30,7 @@ struct clock_attributes
 enum Period {MILLI_SEC,SEC,MIN,HOUR};
 
 /*Function to draw line segment.*/
-void draw_line(const line_seg l)
-{
+void draw_line(const line_seg l) {
 	line(l.a.x,l.a.y,l.b.x,l.b.y);
 };
 
@@ -84,10 +80,9 @@ void Pause(const float duration, const char period='s')
 }
 
 /*Returns initialized attributes.*/
-clock_attributes initialize()
-{
+clock_attributes initialize() {
 	clock_attributes init_attr={{0,0},-1,-1,-1,-1,-1,-1,
-								-1,-1,-1,-1,-1,-1,-1};
+				    -1,-1,-1,-1,-1,-1,-1};
 	return init_attr;
 }
 
