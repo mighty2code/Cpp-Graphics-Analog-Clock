@@ -1,5 +1,5 @@
 /*Program to Display Analog Clock in the Output*/
-/*Author: Tushar	Date: 07/03/2022	Modified: 10/03/2022*/
+/*Date: 07/03/2022	Modified: 10/03/2022*/
 
 #include<graphics.h>
 #include<stdio.h>
